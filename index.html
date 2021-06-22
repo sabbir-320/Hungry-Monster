@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Monster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- nav -->
+        <nav>
+            <img src="logo.png" alt="logo">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Recipes</li>
+                <li>blog</li>
+            </ul>
+        </nav>
+        <!-- search bar -->
+        <div class="searchBar">
+            <input id="inputMeal" type="text" placeholder="Search Meal">
+            <button onclick="searchBtn()">Search</button>
+        </div>
+        <!-- cart -->
+        <div class="cart-container"></div>
+    </div>
+    <div class="modal">
+        <div class="modalContent">
+            <img class="img" src="" alt="">
+            <h2 class="mealName"></h2>
+            <h4 class="ingredient"></h4>
+            <ul class="ul">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <button onclick="closeModal()">&times;</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
